@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مجموعات وصلاحيات </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #f0fafa 0%, #d1f2f2 100%);
+  padding: 20px;
+}
+
+
+ .section-title {
+  background: linear-gradient(135deg, #336d6d 0%, #5db8b8 100%);
+  color: white;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+  .card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+
+    .table thead {
+      background-color: #336d6d;
+      color: white;
+      text-align: center;
+    }
+
+    .table td {
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .form-check-inline {
+      margin-inline-end: 20px;
+    }
+
+.checkbox-group {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #f2f6f6;
+    }
+
+    .table-striped tbody tr:nth-of-type(even) {
+      background-color: #ffffff;
+    }
+
+    .btn-edit {
+      color: #1e5f5f;
+      font-weight: bold;
+    }
+ .btn-custom {
+  background: linear-gradient(135deg, #336d6d 0%, #5db8b8 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 12px 30px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(91, 184, 184, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.btn-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+.btn-custom:hover::before {
+  left: 100%;
+}
+.btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(91, 184, 184, 0.6);
+}
+.btn-custom:active {
+  transform: translateY(-1px);
+}
+  </style>
+</head>
+<body>
+  <div class="container" style="max-width: 95%;">
+
+    <div class="card p-4">
+      <div class="section-title">  مجموعات و صلاحيات المستخدمين </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">اسم المجموعة:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6 d-flex align-items-end justify-content-end">
+          <button class="btn-custom">جديد</button>
+          <button class="btn-custom">حفظ</button>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">اسم القائمة:</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="accounts" value="accounts" checked onclick="showCheckboxes('accounts')">
+            <label class="form-check-label" for="accounts">حسابات</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="users" value="users" onclick="showCheckboxes('users')">
+            <label class="form-check-label" for="users">المستخدمين</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="employees" value="employees" onclick="showCheckboxes('employees')">
+            <label class="form-check-label" for="employees">الموظفين</label>
+          </div>
+
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="Reports" value="Reports"  onclick="showCheckboxes('Reports')">
+            <label class="form-check-label" for="Reports">التقارير</label>
+          </div>
+
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="Purchases" value="Purchases"  onclick="showCheckboxes('Purchases')">
+            <label class="form-check-label" for="Purchases">الموردين و المشتريات</label>
+          </div>
+
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="pharmaceutical" value="pharmaceutical" onclick="showCheckboxes('pharmaceutical')">
+            <label class="form-check-label" for="pharmaceutical">الادوية و المخازن</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="Contracts" value="Contracts" onclick="showCheckboxes('Contracts')">
+            <label class="form-check-label" for="Contracts"> التعاقدات</label>
+          </div>
+
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="Nursery" value="Nursery" onclick="showCheckboxes('Nursery')">
+            <label class="form-check-label" for="Nursery"> الحضانة</label>
+          </div>
+
+           <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="Operations" value="Operations" onclick="showCheckboxes('Operations')">
+            <label class="form-check-label" for="Operations"> العمليات</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="doctors" value="doctors" onclick="showCheckboxes('doctors')">
+            <label class="form-check-label" for="Operations"> الاطباء</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="menu" id="reception" value="reception" onclick="showCheckboxes('reception')">
+            <label class="form-check-label" for="reception"> الاستقبال</label>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Checkboxes -->
+      <div id="accounts-checkboxes" class="checkbox-group">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> إضافة خزنة</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تحويلات خزنة</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> حركة خزنة</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> المصروفات</div>
+          <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقارير المصروفات</div>
+            <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الواردات</div>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقرير تفصيلي الواردات</div>
+                <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقرير الواردات</div>
+                  <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الإيرادات</div>
+                    <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اجمالي ايرادات و مصروفات</div>
+                      <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الايراد اليومي</div>
+                        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> صافي اليوم</div>
+                          <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> نهائي الشهر</div>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> نهائي السنه</div>
+      </div>
+
+      <div id="users-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> إضافة مستخدم</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تعديل مستخدم</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> حذف مستخدم</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> صفحة المستخدمين </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> صفحة المجموعات و الصلاحيات </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> Buckup_Restore </div>
+      </div>
+
+      <div id="employees-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة موظف  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة شفت </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  اضافة شفت الممرضات    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  حضور وانصراف </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">حضور يدوي     </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  غياب الموظفين  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  مكافات الموظفين </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  جزا الموظفين  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقفيل الشهر    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> شيكات الموظفين   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  الاقسام   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقارير الموظفين  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  تقرير حجم الموظفين  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تقرير تعيينات الموظفين   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">   اعدادات الحضور والانصراف</div>
+      </div>
+
+      <div id="Reports-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تقرير الزيارات خلال فترة  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تقرير الخروج خلال فترة    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  تقرير الحالات الخارجي خلال فترة   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> Doctor </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> doctor_examination_report </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  operation_doctor_report</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  operation_report</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> perations_report </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">   تقرير التحاليل</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تقرير الاشعه    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقرير السونار    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تقرير التمريض  </div>
+      </div>
+
+         <div id="Purchases-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">بيانات الموردين  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">   اضافة وتعديل فاتورة المشتريات  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  اضافة وتعديل فاتورة مرتجع المشتريات </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> كشف حساب موردين </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> ديون موردين   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  تقارير</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقرير حركة اصناف </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> البنوك </div>
+      </div>
+
+        <div id="pharmaceutical-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  الادوية والمستلزمات </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الانواع    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الشركات </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">المخازن      </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تحويلات المخازن  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الهالك   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة جرد مخزن</div>
+      </div>
+
+         <div id="Contracts-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> شركات التعاقد   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقرير شركات التعاقد </div>
+      </div>
+
+        <div id="Nursery-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> صفحة التذكرة </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  اضافة حضانة   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة تنفس   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة سباب</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">اضافة اوكسجين  </div>
+         <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة سرير جديد </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة علاج ضوئي فردي </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  اضافة علاج ضوئي ثنائي</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">اضافة علاج ضوئي ثلاثي </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة الادوية والمحاليل  </div>
+         <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">اضافة الاشعة   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">اضافة التحاليل   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة سرير  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">استلام دفعة   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">اضافة الجلسات   </div>
+         <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> العلامات الحيويه    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">اضافة حجز حضانة  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اعدادات الحضانة </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">صفحة غرف الحضانة    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اضافة الحالات الخارجي</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> تقرير الحالات الخارجي</div>
+      </div>
+
+        <div id="Operations-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> بيانات العمليات  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">تصنيف العمليات     </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  carm اعدادات  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  بيانات الغرف  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> انواع الغرف     </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> درجات الغرف </div>
+      </div>
+
+       <div id="doctors-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">بيانات الاطباء  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> قيمة الزيارة    </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الاقسام  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اذن دفع نقدية</div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> اذن استلام نقدية </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> كشف حساب دكتور  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> صندوق التمريض</div>
+      </div>
+
+         <div id="reception-checkboxes" class="checkbox-group d-none">
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">بيانات المرضى   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  حجز غرفة  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">حضور طوارئ  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> حضور كشف  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> مدفوعات الاشعه </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">  مدفوعات التحاليل   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> مدفوعات السونار  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">التحاليل   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> الاشعه  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">السونار   </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"> ادوية العمليات  </div>
+        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox">   خدمات الكشف</div>
+      </div>
+
+      <!-- جدول -->
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped mt-4">
+          <thead>
+            <tr>
+              <th>اسم المجموعة</th>
+              <th>تعديل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>الادمن</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>الحضّانة</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>التمريض</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>الاستقبال</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>الأطباء</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>مخزن</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>ادارة</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>المعمل</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+            <tr><td>الاشعة</td><td><a href="#" class="btn-edit">تعديل</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showCheckboxes(group) {
+        
+      document.getElementById("accounts-checkboxes").classList.add("d-none");
+      document.getElementById("users-checkboxes").classList.add("d-none");
+      document.getElementById("employees-checkboxes").classList.add("d-none");
+      document.getElementById("Reports-checkboxes").classList.add("d-none");
+      document.getElementById("Purchases-checkboxes").classList.add("d-none");
+      document.getElementById("pharmaceutical-checkboxes").classList.add("d-none");
+      document.getElementById("Contracts-checkboxes").classList.add("d-none");
+      document.getElementById("Nursery-checkboxes").classList.add("d-none");
+      document.getElementById("Operations-checkboxes").classList.add("d-none");
+      document.getElementById("doctors-checkboxes").classList.add("d-none");
+      document.getElementById("reception-checkboxes").classList.add("d-none");
+      document.getElementById(group + "-checkboxes").classList.remove("d-none");
+    }
+     window.onload = function() {
+    showCheckboxes('accounts');
+  };
+  </script>
+</body>
+</html>

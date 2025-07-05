@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إضافة حضور</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #f0fafa 0%, #d1f2f2 100%);
+      padding: 20px;
+    }
+    .box {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .box-header {
+      background: linear-gradient(135deg, #336d6d 0%, #5db8b8 100%);
+      color: white;
+      padding: 15px;
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .form-control:focus {
+      border-color: #5db8b8;
+      box-shadow: 0 0 0 0.2rem rgba(93, 184, 184, 0.25);
+    }
+    .btn {
+      background: linear-gradient(135deg, #336d6d 0%, #5db8b8 100%);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(91, 184, 184, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(91, 184, 184, 0.6);
+    }
+
+    .btn:active {
+      transform: translateY(-1px);
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="box-header">إضافة حضور</div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">رقم الملف:</label>
+          <input type="text" class="form-control" value="3">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">التاريخ:</label>
+          <input type="date" class="form-control" value="23/04/2025">
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">اسم المريض:</label>
+          <select class="form-select">
+            <option>ابن دعاء انور سعد</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">اختر السرير:</label>
+          <select class="form-select">
+            <option>حضانه 2</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">كشف دخول:</label>
+          <input type="text" class="form-control" value="50">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">نوع الطفل:</label>
+         <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" checked>
+            <label class="form-check-label" for="female">أنثى</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="male" >
+            <label class="form-check-label" for="male">ذكر</label>
+            </div>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">طرف المريض:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="party" id="party1" checked>
+            <label class="form-check-label" for="party1">طرف المريض</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="party" id="party2">
+            <label class="form-check-label" for="party2">حالة تعاقد</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="error">هذا السرير يوجد فيه طفل بالفعل !</div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-custom px-5">تعديل</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="box">
+      <div class="box-header">بحث المرضى</div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">رقم الملف:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">العنوان:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الاسم يبدأ:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الوظيفة:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الاسم يحتوي:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">تليفون:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">تاريخ الميلاد:</label>
+          <input type="date" class="form-control" >
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الرقم القومي:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-custom mx-2">بحث</button>
+          <button type="reset" class="btn btn-custom mx-2">تفريغ الحقول</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
