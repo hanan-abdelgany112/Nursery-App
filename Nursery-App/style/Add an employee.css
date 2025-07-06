@@ -1,0 +1,45 @@
+    body {
+      background: linear-gradient(135deg, #f0fafa 0%, #d1f2f2 100%);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      padding: 30px;
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      background: linear-gradient(135deg, #1e5f5f, #4ebcbc);
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+    }
+    .btn-custom {
+      background: linear-gradient(135deg, #1e5f5f, #4ebcbc);
+      color: white;
+      font-weight: bold;
+      border-radius: 25px;
+      padding: 10px 30px;
+      border: none;
+    }
+    .btn-custom:hover {
+      background: #155a5a;
+    }
+    table thead th {
+      background: #1e5f5f;
+      color: white;
+      text-align: center;
+    }
+    table tbody td {
+      text-align: center;
+    }
+    #successMessage {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+    }
