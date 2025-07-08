@@ -17,6 +17,7 @@
     }
     .form-label {
       font-weight: bold;
+            color: #1e5f5f;
     }
     .btn-custom {
       background: linear-gradient(135deg, #1e5f5f, #4ebcbc);
@@ -42,4 +43,22 @@
       font-weight: bold;
       margin-top: 10px;
       display: none;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: none;
+    }
+  .form-control:focus, .form-select:focus {
+      border-color: #4ebcbc;
+      box-shadow: 0 0 0 0.2rem rgba(78, 188, 188, 0.25);
+    }
+       .note {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #444;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      text-align: center;
     }
