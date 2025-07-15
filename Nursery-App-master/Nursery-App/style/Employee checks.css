@@ -193,3 +193,7 @@ table tbody tr td {
       border-top: 1px solid #ccc;
       text-align: center;
     }
+       .table-label {
+      font-weight: bold;
+      background-color: #f8f9fa;
+    }
