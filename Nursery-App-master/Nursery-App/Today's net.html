@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>  اجمالي اليوم   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/style/Employee checks.css">
+  <style>
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card mb-4">
+    <div class="card-header"> اجمالي اليوم       </div>
+    <div class="card-body">
+      <form class="row g-3">
+
+
+
+ <div class="col-md-12">
+  <label class="form-label">اليوم   :</label>
+  <select class="form-select" id="fromTime">
+    <option selected disabled>اختر اليوم</option>
+    <option value="08:00"> 1 </option>
+    <option value="09:00"> 2 </option>
+    <option value="10:00"> 3 </option>
+    <option value="11:00"> 4   </option>
+  </select>
+</div>
+
+      
+         <div class="col-md-6  text-center">
+      <button type="button" class="btn btn-custom px-5" onclick="addExpense()">عرض</button>
+
+        </div>
+           <div class="col-md-6  text-center">
+      <button type="button" class="btn btn-custom px-5" onclick="addExpense()">طباعة</button>
+
+        </div>
+      </form>
+
+
+      <div class="table-responsive mt-4">
+  <table class="table table-bordered" id="expensesTable">
+    <thead>
+      <tr>
+    
+        <th>اليوم </th>
+        <th>الاجمالي اليوم</th>
+      
+        <th>حذف</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<div id="successMessage" class="text-success text-center fw-bold mt-3" style="display: none;">
+  تم الإضافة بنجاح
+</div>
+
+    </div>
+  </div>
+
+</div>
+<script>
+  function addExpense() {
+    const fromDate = document.querySelectorAll('#theDate')[0].value;
+    const toDate = document.querySelectorAll('#theDate')[1].value;
+
+    if (!fromDate || !toDate) {
+      alert("يرجى اختيار التاريخ من وإلى.");
+      return;
+    }
+
+    // بيانات تجريبية: يمكنك ربطها لاحقًا بقاعدة بيانات
+    const income = 1000;
+    const expense = 500;
+    const net = income - expense;
+
+    const table = document.getElementById('expensesTable').getElementsByTagName('tbody')[0];
+    const newRow = table.insertRow();
+
+    newRow.innerHTML = `
+      <td>${fromDate} - ${toDate}</td>
+      <td>${income} جنيه</td>
+      <td>${expense} جنيه</td>
+      <td>${net} جنيه</td>
+      <td><button class="btn btn-danger btn-sm" onclick="this.closest('tr').remove()">حذف</button></td>
+    `;
+
+    const successMessage = document.getElementById('successMessage');
+    successMessage.style.display = 'block';
+    setTimeout(() => successMessage.style.display = 'none', 3000);
+  }
+</script>
+
+
+</body>
+</html>

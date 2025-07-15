@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بيانات المرضى</title>
+   <link rel="stylesheet" href="/style/Patient-data.css">
+  <style>
+
+
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-button active" onclick="switchTab('patients')">بيانات المرضى</button>
+    <button class="tab-button" onclick="switchTab('search')">بحث المريض</button>
+    <button class="tab-button" onclick="switchTab('visits')">زيارات المرضى</button>
+    <button class="tab-button" onclick="switchTab('reports')">كشوفات</button>
+    <button class="tab-button" onclick="switchTab('labs')">معامل</button>
+    <button class="tab-button" onclick="switchTab('images')">صور PDF</button>
+  </div>
+
+  <!-- بيانات المرضى -->
+  <div class="section active" id="patients">
+
+    <div class="box">
+      <div class="box-header">بيانات المريض</div>
+      <div class="box-content">
+        <table>
+
+          <tr>
+            <td> رقم المريض :</td>
+            <td><input class="form-control" value="6"></td>
+             <td>الاسم :<span class="highlight">(Required Data)</span></td>
+            <td><input class="form-control"></td>
+          </tr>
+
+          <tr>
+            <td>الوظيفة :</td>
+            <td><input class="form-control"></td>
+            <td>العنوان :</td>
+            <td colspan="2"><input class="form-control"></td>
+          </tr>
+          <tr>
+            <td>تاريخ الميلاد :</td>
+            <td><input class="form-control"></td>
+             <td>عمر المريض :</td>
+            <td><input class="form-control" placeholder="عمر المريض"></td> 
+          </tr>
+        
+          <tr>
+             <td>النوع :</td>
+            <td colspan="3">
+              <label><input type="radio" name="gender" checked> ذكر</label>
+              <label><input type="radio" name="gender"> أنثى</label>
+            </td>
+           
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="box blue-bg">
+      <div class="box-header">بيانات المبلغ :</div>
+      <div class="box-content">
+        <table>
+          <tr>
+            <td>اسم المبلغ :</td>
+            <td><input class="form-control"></td>
+             <td>الرقم القومي للمبلغ :</td>
+            <td><input class="form-control"></td>
+           
+          </tr>
+          <tr>
+             <td>درجة القرابة :</td>
+            <td><input class="form-control"></td>
+           <td>تليفون المبلغ :</td>
+            <td><input class="form-control"></td>
+            
+          </tr>
+          
+        </table>
+      </div>
+    </div>
+
+   <div style="display: flex; justify-content: center;">
+  <button class="btn">اضافة</button>
+</div>
+
+  </div>
+
+  <!-- باقي الأقسام -->
+  <div class="section" id="search">
+    <div class="box">
+      <div class="box-header">بحث المريض :</div>
+      <div class="box-content">
+          <table>
+          <tr>
+            <td>رقم الملف :</td>
+            <td><input class="form-control" value="6"></td>
+             <td>العنوان : </td>
+            <td><input class="form-control"></td>
+          </tr>
+
+          <tr>
+            <td>لإسم يبدأ :</td>
+            <td><input class="form-control"></td>
+            <td>الوظيفة :</td>
+            <td colspan="2"><input class="form-control"></td>
+          </tr>
+          <tr>
+            <td>الإسم يحتوي :</td>
+            <td><input class="form-control"></td>
+             <td>تليفون :</td>
+            <td><input class="form-control"></td> 
+          </tr>
+          <tr>
+            <td> تاريخ الميلاد :</td>
+            <td><input class="form-control"></td>
+             <td>الرقم القومي :</td>
+            <td><input class="form-control" ></td> 
+          </tr>
+        </table>
+          <div style="display: flex; justify-content: center; gap: 20px;">
+  <button class="btn">بحث</button>
+  <button class="btn">تفريغ الحقول</button>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="visits">
+    <div class="box">
+      <div class="box-header">زيارات المرضى</div>
+      <div class="box-content">
+        <p style="text-align: center; color: #666; font-size: 18px; padding: 40px;">محتوى زيارات المرضى</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="reports">
+    <div class="box">
+      <div class="box-header">الكشوفات</div>
+      <div class="box-content">
+        <p style="text-align: center; color: #666; font-size: 18px; padding: 40px;">محتوى الكشوفات</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="labs">
+    <div class="box">
+      <div class="box-header">المعامل</div>
+      <div class="box-content">
+        <p style="text-align: center; color: #666; font-size: 18px; padding: 40px;">محتوى المعامل</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="images">
+    <div class="box">
+      <div class="box-header">صور PDF</div>
+      <div class="box-content">
+    <table style="width: 100%; text-align: right; gap: 20px;">
+  <tr>
+    <td style="padding: 10px;">
+      تحميل ملف الصوره او ملف الـ PDF
+    </td>
+    <td style="padding: 10px;">
+      <input type="file" id="fileInput" accept=".png,.jpg,.jpeg,.pdf" onchange="updateFileName()" />
+      <span style="margin-right: 10px;"></span>
+    </td>
+    <td style="padding: 10px;">
+      
+      <button onclick="addFile()" class="btn" >إضافة</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <span id="errorMsg" style="color: red; font-weight: bold;"></span>
+    </td>
+  </tr>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(id) {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
+      document.querySelector(`.tab-button[onclick*="${id}"]`).classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+
+
+      let fileAdded = false;
+
+  function updateFileName() {
+    const input = document.getElementById("fileInput");
+    const fileName = document.getElementById("fileName");
+    const errorMsg = document.getElementById("errorMsg");
+
+    if (input.files.length > 0) {
+      fileName.textContent = input.files[0].name;
+      errorMsg.textContent = "";
+    } else {
+      fileName.textContent = "No file chosen";
+    }
+  }
+
+  function addFile() {
+    const input = document.getElementById("fileInput");
+    const errorMsg = document.getElementById("errorMsg");
+
+    if (input.files.length === 0) {
+      errorMsg.textContent = "من فضلك احفظ ملف الزياره اولا !!!!";
+    } else {
+      errorMsg.textContent = "";
+      fileAdded = true;
+      alert("تم إضافة الملف بنجاح");
+      // هنا ممكن اضيف كود لرفع الملف للسيرفر 
+    }
+  }
+  </script>
+</body>
+</html>

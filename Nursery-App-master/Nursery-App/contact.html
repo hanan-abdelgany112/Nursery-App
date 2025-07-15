@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>KOURA </title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+        <style>
+    .navbar-brand, .navbar-brand span, .navbar-brand i {
+        color: white !important;
+    }
+        .navbar-brand, .navbar-brand span, .navbar-brand i {
+        color: white !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-weight: 800;
+    }
+
+    .dropdown-menu .dropdown-item {
+        font-weight: 700;
+    }
+.site-header {
+    background-color: #123456;
+    padding: 50px 0;
+}
+
+.section-bg {
+    background-image: url('/images/back2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 850px; 
+    color: white;
+    position: relative;
+}
+
+
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    height: 30px !important;
+  }
+
+  .section-bg {
+    height: auto;
+    padding: 50px 10px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .dropdown-menu {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+</style>
+
+    </head>
+    
+
+    <body class="topics-listing-page" id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; gap: 10px;">
+                             <img src="/images/TS Logo3.png" alt="TabibSoft Logo" class="img-fluid" style="height: 40px;  ">
+                        <!-- <span class="text-white" style="font-size: 1.2rem; font-weight: bold;">TabibSoft</span> -->
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+
+                              <!-- <li class="nav-item dropdown" >
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                     <i class="bi bi-droplet-half me-1"></i> التحاليل
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Analysis settings.html"> إعدادات التحاليل</a></li>
+                                    <li><a class="dropdown-item active" href="contact.html"> التحاليل</a></li>
+                                     <li><a class="dropdown-item active" href="contact.html"> نقرير التحاليل</a></li>
+                                </ul>
+                            </li> -->
+
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                 <i class="bi bi-person-badge me-1"></i>		
+                                   الاطباء
+                                    </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Doctors' data.html">  بيانات الاطباء</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                    <i class="bi bi-hospital me-1"></i>
+                                    الحضانة</a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Patient-data.html"> بيانات المرضى </a></li>
+                                    <li><a class="dropdown-item active" href="Add a bed.html"> إضافة سرير</a></li>
+                                     <li><a class="dropdown-item active" href="Reservation page.html"> الحجوزات </a></li>
+                                      <li><a class="dropdown-item active" href="Nursery settings.html"> إعدادات الحضانة </a></li>
+                                       <li><a class="dropdown-item active" href="Device settings.html"> إعدادات الأجهزة </a></li>
+                                         <li><a class="dropdown-item active" href="Nursery visit reports.html"> تقارير زيارات الحضانة خلال فترة  </a></li>
+                                           <li><a class="dropdown-item active" href="Nursery Exit Report.html"> تقارير الخروج الحضانة خلال فترة  </a></li>
+                                </ul>
+                            </li>
+
+                           <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                    <i class="bi bi-file-earmark-text me-1"></i>
+                                    التعاقدات</a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Contracting companies.html">  شركات التعاقد </a></li>
+                                    <li><a class="dropdown-item" href="Contracting companies reports.html">   تقرير شركات التعاقد</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                                    <i class="bi bi-capsule me-1"></i>
+                                    الادوية و المخازن</a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="topics-listing.html">  المخزن </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person-lines-fill me-1"></i>
+                                    المستخدمين</a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Groups and Permissions.html">  مجموعات و صلاحيات</a></li>
+                                    <li><a class="dropdown-item active" href="Add a user.html"> إضافة مستخدم</a></li>
+                                      <li><a class="dropdown-item active" href="Buckup-Restore.html"> Buckup & Restore</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-people-fill me-1"></i>
+                                    الموظفين</a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Add an employee.html">  إضافة موظف </a></li>
+                                    <li><a class="dropdown-item active" href="Add a shift.html"> إضافة شفت</a></li>
+                                    <li><a class="dropdown-item active" href="contact.html">إضافة شفت الممرضات</a></li>
+                                    <li><a class="dropdown-item active" href="Attendance and departure.html">حضور و انصراف   </a></li>
+                                    <li><a class="dropdown-item active" href="Staff attendance.html">حضور يدوي  </a></li>
+                                    <li><a class="dropdown-item active" href="Staff absence.html">غياب الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Employee rewards.html">مكافأت الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Employee discount.html">جزا الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Closing the month.html">تقفيل الشهر  </a></li>
+                                    <li><a class="dropdown-item active" href="Employee checks.html">شيكات الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Sections.html">الأقسام  </a></li>
+                                    <li><a class="dropdown-item active" href="contact.html">تقارير الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Staff Size Report.html">تقرير حجم الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Staff Appointments Report.html">تقرير تعيينات الموظفين  </a></li>
+                                    <li><a class="dropdown-item active" href="Logout and exit settings.html">إعدادات الحضور و الانصراف  </a></li>
+                                </ul>
+                            </li>
+
+                                     <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   <i class="bi bi-cash-coin me-1"></i>
+                                    الحسابات
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="Add and modify vault.html">  إضافة خزنة </a></li>
+                                    <li><a class="dropdown-item active" href="Safe transfers.HTML"> تحويلات خزنة </a></li>
+                                    <li><a class="dropdown-item active" href="Treasury movement.html">حركة خزنة  </a></li>
+                                    <li><a class="dropdown-item active" href="Expenses.html">المصروفات   </a></li>
+                                    <li><a class="dropdown-item active" href="Expense Report.html">تقرير المصروفات   </a></li>
+                                    <li><a class="dropdown-item active" href="Imports.html">الواردات   </a></li>
+                                    <li><a class="dropdown-item active" href="Detailed import report.html">تقرير تفصيلي الواردات   </a></li>
+                                    <li><a class="dropdown-item active" href="Import Report.html">تقرير الواردات   </a></li>
+                                    <li><a class="dropdown-item active" href="Revenues.html">الايرادات   </a></li>
+                                    <li><a class="dropdown-item active" href="Total revenues and expenses.html">اجمالي الايرادات و المصروفات   </a></li>
+                                    <li><a class="dropdown-item active" href="Daily income.html">الايراد اليومي  </a></li>
+                                    <li><a class="dropdown-item active" href="Final of the month.html">نهائي الشهر   </a></li>
+                                    <li><a class="dropdown-item active" href="Final of the year.html">نهائي السنة   </a></li>
+                                    <li><a class="dropdown-item active" href="Today's net.html">صافي اليوم    </a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="login.html">
+                                    <i class="bi bi-box-arrow-right me-1"></i>
+                                    Logout</a>
+                            </li> 
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+            </header>
+
+
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+                    <div style="height: 500px;"></div> 
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">                
+                </div>
+            </div>
+        </footer> -->
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

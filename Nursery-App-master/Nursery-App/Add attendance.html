@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إضافة حضور</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/Add attendance.css">
+  <style>
+  
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="box-header">إضافة حضور</div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label-control">رقم الملف:</label>
+          <input type="text" class="form-control" value="3">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label-control">التاريخ:</label>
+          <input type="date" class="form-control" value="23/04/2025">
+        </div>
+        <div class="col-md-12">
+          <label class="form-label-control">اسم المريض:</label>
+          <select class="form-select">
+            <option>ابن دعاء انور سعد</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label-control">اختر السرير:</label>
+          <select class="form-select">
+            <option>حضانه 2</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label-control">كشف دخول:</label>
+          <input type="text" class="form-control" value="50">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label-control">نوع الطفل:</label>
+         <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" checked>
+            <label class="form-check-label" for="female">أنثى</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="male" >
+            <label class="form-check-label" for="male">ذكر</label>
+            </div>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label-control">طرف المريض:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="party" id="party1" checked>
+            <label class="form-check-label" for="party1">طرف المريض</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="party" id="party2">
+            <label class="form-check-label" for="party2">حالة تعاقد</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="error">هذا السرير يوجد فيه طفل بالفعل !</div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-custom px-5">تعديل</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="box">
+      <div class="box-header">بحث المرضى</div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">رقم الملف:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">العنوان:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الاسم يبدأ:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الوظيفة:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الاسم يحتوي:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">تليفون:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">تاريخ الميلاد:</label>
+          <input type="date" class="form-control" >
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">الرقم القومي:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-custom mx-2">بحث</button>
+          <button type="reset" class="btn btn-custom mx-2">تفريغ الحقول</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

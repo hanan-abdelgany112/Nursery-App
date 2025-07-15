@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>صفحة الحجوزات</title>
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+ <link rel="stylesheet" href="/style/Reservation page.css">
+  <style>
+
+  </style>
+</head>
+<body class="res">
+  <div id="navbar-container"></div>
+  <div class="main-wrapper">
+  <header >صفحة الحجوزات</header>
+  <div class="separator-line"></div>
+
+  <div class="transfer-bar">
+    <label for="fromBed">نقل من السرير:</label>
+   <select id="fromBed">
+  <option value="1">حضانة 1</option>
+  <option value="2">حضانة 2</option>
+  <option value="3">حضانة 3</option>
+  <option value="4">حضانة 4</option>
+  <option value="5">حضانة 5</option>
+  <option value="6">حضانة 6</option>
+</select>
+
+    <label for="toBed">إلى السرير:</label>
+    <select id="toBed">
+       <option value="1">حضانة 1</option>
+  <option value="2">حضانة 2</option>
+  <option value="3">حضانة 3</option>
+  <option value="4">حضانة 4</option>
+  <option value="5">حضانة 5</option>
+  <option value="6">حضانة 6</option>
+    </select>
+
+    <button style="font-weight: bold; font-size: 15px;">نقل</button>
+  </div>
+
+  <div class="separator-line"></div>
+
+  <div class="container">
+
+   <!-- كارت حضانة 1  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+  <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 1</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <a href="nursery page.html" style="text-decoration: none;">
+          <div class="service-item care">حضّانة</div>
+        </a>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn"  onclick="window.location.href='ticket-data.html?incubator=1'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 2  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+        <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 2</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=2'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 3  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+       <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 3</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=3'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 4  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+       <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 4</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=4'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 5  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+       <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 5</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=5'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 6  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+       <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 6</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=6'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 7  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+     <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 7</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=7'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+   <!-- كارت حضانة 8  -->
+<div class="modern-card">
+  <div class="modern-header">    
+    <div class="modern-title">
+        <h3>
+  <i class="fas fa-baby"></i>
+  <a href="Add attendance.html" style="color: white; text-decoration: none;">حضانة 8</a>
+</h3>
+      <span class="modern-subtitle">وحدة العناية المركزة</span>
+    </div>
+  </div>
+
+  <div class="modern-patient-info">
+    <div class="patient-details">
+      <h4>ابن دعاء أنور سعيد</h4>
+      <p class="admission-date">
+        <i class="fas fa-calendar-alt"></i>
+        تاريخ الدخول: 2025/3/18
+      </p>
+    </div>
+    <div class="vital-stats">
+      <div class="stat-item">
+        <span class="stat-value">2.3</span>
+        <span class="stat-label">كجم</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3</span>
+        <span class="stat-label">أيام</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-services">
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-bed"></i>
+        <span> الإقامة</span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item care">حضّانة</div>
+        <div class="service-item critical">تنفّس صناعي</div>
+        <div class="service-item therapy">علاج ضوئي</div>
+        <div class="service-item oxygen">أكسجين</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-pills"></i>
+        <span>الأدوية </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item medicine">الأدوية والمحاليل</div>
+        <div class="service-item supplies">مستهلكات الداخلي</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-microscope"></i>
+        <span>الفحوصات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item radiology">الأشعة</div>
+        <div class="service-item lab">التحاليل</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-user-md"></i>
+        <span>الإشراف </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item doctor">زيارات الطبيب</div>
+        <div class="service-item equipment">اضافة اجهزة</div>
+      </div>
+    </div>
+
+    <div class="service-category">
+      <div class="category-header">
+        <i class="fas fa-calculator"></i>
+        <span>الحسابات </span>
+      </div>
+      <div class="service-grid">
+        <div class="service-item payment">استلام دفعة</div>
+        <div class="service-item file">اضافة ملف</div>
+        <div class="service-item import">استيراد دفعة</div>
+        <div class="service-item discount">تطبيق الخصم</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modern-footer">
+    <button class="modern-ticket-btn" onclick="window.location.href='ticket-data.html?incubator=8'" style="justify-content: center; text-align: center;">
+        <div class="d-flex align-items-center" >
+        <i class="fas fa-ticket-alt me-2" ></i>
+        <span>عرض بيانات التذكرة</span>
+    </div>
+    </button>
+  </div>
+  
+</div>
+
+
+  </div>
+  </div>
+</div>
+  <script>
+
+//    $(document).ready(function() {
+//     $('#fromBed').select2({
+//       placeholder: "اختر السرير",
+//       width: '150px' ,
+//         minimumResultsForSearch: 0 
+    
+//     });
+//     $('#toBed').select2({
+//       placeholder: "اختر السرير",
+//       width: '150px',
+//         minimumResultsForSearch: 0
+//     });
+//   });
+ 
+
+//   // fetch("Resrv .html")
+//   //   .then(response => response.text())
+//   //   .then(data => {
+//   //     document.getElementById("navbar-container").innerHTML = data;
+//   //   });
+
+
+
+
+
+
+// function viewTicketData(incubatorNumber) {
+//   window.location.href = `ticket-data.html?incubator=${incubatorNumber}`;
+  
+//   //    فتح الصفحة في تبويب جديد
+//   // window.open(`ticket-data.html?incubator=${incubatorNumber}`, '_blank');
+// }
+
+
+// $(document).ready(function() {
+ 
+//   $('#fromBed').select2({
+//     placeholder: "اختر السرير",
+//     width: '150px',
+//     minimumResultsForSearch: 0 
+//   });
+  
+//   $('#toBed').select2({
+//     placeholder: "اختر السرير",
+//     width: '150px',
+//     minimumResultsForSearch: 0
+//   });
+
+ 
+//   $('.modern-ticket-btn').each(function(index) {
+//     $(this).click(function() {
+//       const incubatorNumber = index + 1; 
+//       viewTicketData(incubatorNumber);
+//     });
+//   });
+// });
+
+</script>
+
+</body>
+</html>
